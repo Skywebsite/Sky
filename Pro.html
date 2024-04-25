@@ -1,130 +1,53 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<title>pro</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-.mySlides {display:none;}
-</style>
-</head>
-
-<body>
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-
-    </a>
-
-    <a href="Skywebproject.html" class="w3-bar-item w3-button">welcome to Skyweb</a>
-
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-
-      <i class="fa fa-search"></i>
-
-    </a>
-
-  </div>
-
-
-  <!-- Navbar on small screens -->
-
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-
-  </div>
-  <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="IMG-20240425-WA0010.jpg" style="width:100%">
-  <img class="mySlides" src="IMG-20240425-WA0013.jpg" style="width:100%">
-  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
-  </div>
-<script>
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
-<body>
-<form action="https://formsubmit.co/skywebdevelopers123@gmail.com" method="POST">
-<h2 class="w3-center" ><b>premium</b></h2>
- 
-<div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-    <div class="w3-rest">
-      <input class="w3-input w3-border" name="first premium user" type="text" placeholder="First Name">
-    </div>
-</div>
-
-<div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-    <div class="w3-rest">
-      <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
-    </div>
-</div>
-
-<div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
-    <div class="w3-rest">
-      <input class="w3-input w3-border" name="email" type="text" placeholder="Email✉️">
-    </div>
-</div>
-
-<div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
-    <div class="w3-rest">
-      <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone☎️📞">
-    </div>
-</div>
-
-<div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
-    <div class="w3-rest">
-      <input class="w3-input w3-border" name="message" type="text" placeholder="Message💌">
-    </div>
-</div>
-
-<p class="w3-center">
-<button type="submit"  class="w3-button w3-section w3-blue w3-ripple">Send</button>
-  
-</p>
-</form>
-  <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-
-function toggleFunction() {
-
-    var x = document.getElementById("navDemo");
-
-    if (x.className.indexOf("w3-show") == -1) {
-
-        x.className += " w3-show";
-
-    } else {
-
-        x.className = x.className.replace(" w3-show", "");
-
-    }
-
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-  </script>
-  
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
 </body>
 </html>
+
+
